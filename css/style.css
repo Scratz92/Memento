@@ -1,0 +1,124 @@
+@font-face { font-family: myFirstFont; src: url(LifeCraft_Font.ttf); }
+@font-face { font-family: elven; src: url(elvencommonspeak.ttf); }
+@font-face { font-family: thick_standard; src: url(FFF_Light_TRIAL.ttf); }
+@font-face { font-family: rules; src: url(AdventureOfTheOldGiant.ttf); }
+
+html, body {
+  margin: 0; padding: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("img/background.jpg");
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.main_header { height: 100vh; }
+.main_header h1 {
+  margin: 0 auto;
+  padding: 25px 0 0 0;
+  font-family: myFirstFont;
+  font-size: 10em;
+  color: #FFFFFF;
+  width: 800px;
+  text-align: center;
+}
+nav {
+  margin: 0 auto;
+  width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #CEDDEB;
+  border-radius: 15px;
+  transition: all 0.4s;
+}
+nav.sticky {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 0px;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0; padding: 0;
+}
+nav ul li {
+  display: inline;
+  color: #000000;
+  font-family: thick_standard;
+  font-weight: lighter;
+  font-size: 1.5em;
+  padding: 0 25px 0 25px;
+}
+nav ul li:hover {
+  background-color: #83ef70;
+  cursor: pointer;
+}
+nav ul li a:link { text-decoration: none; color: #000000; }
+nav ul li a:active { color: #FFFFFF; }
+
+.raid_progress {
+  width: 800px;
+  margin: 0 auto;
+  /*border: 2px solid red;*/
+}
+.raid_progress .raid_title { text-align: center; margin-bottom: 25px; }
+.raid_progress .raid_title h2 {
+  margin: 0 0 -60px 0;
+  color: #CEDDEB;
+  font-family: elven;
+  font-size: 4em;
+  font-weight: lighter;
+}
+
+.raid_progress ._1 { width: 465px; margin: 0 auto; }
+.raid_progress ._1 img { margin-left: -20px; height: 200px; }
+
+.raid_progress ._2 { width: 465px; margin: 10px auto 0 auto; }
+.raid_progress ._2 img { margin-left: -20px; height: 200px; }
+
+.content {
+  width: 250px;
+  text-align: center;
+  margin: 20px auto;
+}
+/* Guild laws */
+.Rules { height: 100vh; }
+.rules_section {
+  width: 800px;
+  margin: 25px auto;
+  text-align: center;
+  position: relative;
+}
+/*Roster*/
+section { height: 100vh; border-bottom: 1px solid #FFFFFF; }
+header { border-bottom: 1px solid white; }
+
+.roster {
+  border: 2px solid red;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: myFirstFont;
+}
+.roster h1 { font-size: 5em; color: #FFFFFF; padding-top: 50px;}
+.raid_roster {
+  float: left;
+  width: 50%;
+  list-style-type: none;
+}
+.core_raiders {float: left; width: 50%;}
+.trial_raiders {float: left; width: 50%;}
+.guild_rank {
+  float: left;
+  width: 50%;
+}
